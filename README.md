@@ -96,3 +96,8 @@ mv trec_eval /usr/local/bin/
 Atom package to browse and edit remote files using FTP and SFTP
 
 [webpage](https://atom.io/packages/remote-edit)
+
+
+# Acknowledgments
+
+A big thank you to [Flávio Martins](https://github.com/flaviomartins) for providing guidance with this project.
