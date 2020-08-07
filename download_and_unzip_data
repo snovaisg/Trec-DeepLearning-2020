@@ -1,0 +1,21 @@
+#!/bin/bash
+cd "$(dirname "$0")" # change current directory to script directory
+
+# create data and data19 directory
+rm -rf data && mkdir data
+rm -rf data19 && mkdir data19
+
+# download data
+wget -O data/queries.tar.gz  https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz
+wget -O data/qrels.dev.tsv https://msmarco.blob.core.windows.net/msmarcoranking/qrels.dev.tsv
+wget -O data/qrels.train.tsv https://msmarco.blob.core.windows.net/msmarcoranking/qrels.train.tsv
+wget -O data/collection.tar.gz https://msmarco.blob.core.windows.net/msmarcoranking/collection.tar.gz
+wget -O data19/2019qrels-pass.txt https://trec.nist.gov/data/deep/2019qrels-pass.txt
+wget -O data19/queries.tar.gz https://msmarco.blob.core.windows.net/msmarcoranking/queries.tar.gz
+
+# unzip data
+tar -C data/ -xvf data/queries.tar.gz
+tar -C data/ -xvf data/collection.tar.gz
+tar -C data19/ -xvf data19/queries.tar.gz
+
+
