@@ -87,7 +87,7 @@ make
 mv trec_eval /usr/local/bin/
 ~~~
 
-
+**python version**: 3.7.3
 
 ## Additional setups
 
