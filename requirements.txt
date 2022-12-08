@@ -7,7 +7,7 @@ boto==2.49.0
 boto3==1.14.36
 botocore==1.17.36
 cedr @ git+https://github.com/Georgetown-IR-Lab/cedr.git@640b363ce4b6297a5cddcdbfff4c643e37cbbccd
-certifi==2020.6.20
+certifi==2022.12.7
 cffi==1.14.1
 chardet==3.0.4
 chest==0.2.3
